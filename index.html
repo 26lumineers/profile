@@ -233,6 +233,20 @@
       }
     }
 
+    /* make contact pills mobile-friendly */
+    @media (max-width: 600px) {
+      .contact-list {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+      }
+
+      .contact-list .pill {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     .pill {
       display: inline-flex;
       align-items: center;
@@ -541,20 +555,14 @@
       <header>
         <div class="hero-left">
           <div class="avatar-wrapper">
-            <!-- Replace profile.jpg with your own image file name -->
             <img src="fidz.jpg" alt="Firman Lasaman profile" class="avatar" />
-            <!-- If you want a text placeholder instead of an image, remove the <img> above
-                 and uncomment the line below:
-            <div class="avatar-placeholder">FL</div>
-            -->
           </div>
 
           <div class="hero-main">
             <div class="name">
               Firman&nbsp;Lasaman
-              <span class="badge">Golang · Payments · Cloud-Native</span>
             </div>
-            <div class="role">Software Engineer – High-Throughput Systems &amp; Fintech</div>
+            <div class="role">Software Engineer </div>
             <p class="summary">
               <strong>Software Engineer</strong> focused on modernizing national payment systems with
               <strong>cloud-native Golang microservices</strong>. Experienced in optimizing infrastructure
@@ -573,14 +581,14 @@
               <span class="icon">✉️</span>
               <span>firman.lasaman@gmail.com</span>
             </a>
-            <span class="pill">
+            <a class="pill" href="tel:+66949903946">
               <span class="icon">📞</span>
               <span>+66 94 990 3946</span>
-            </span>
-            <span class="pill">
+            </a>
+            <a class="pill" href="tel:+66803398749">
               <span class="icon">📞</span>
               <span>+66 80 339 8749</span>
-            </span>
+            </a>
           </div>
           <div class="social-list">
             <a class="pill" href="https://linkedin.com/in/fidz" target="_blank" rel="noreferrer">
@@ -912,7 +920,7 @@
                 <strong>Prince of Songkla University</strong>
                 <div>Bachelor of Science (B.Sc.) – Computer Science</div>
                 <div class="edu-meta">
-                  <span>Khon Kaen, Thailand 40170</span>
+                  <span>Songkhla, Thailand</span>
                   <span>GPA: 2.63</span>
                   <span class="edu-highlight">Class President</span>
                 </div>
